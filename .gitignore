@@ -6,3 +6,4 @@ _drafts
 .jekyll-metadata
 vendor
 .tweet-cache
+s3_website.yml
