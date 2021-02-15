@@ -1,0 +1,59 @@
+{% if include.alt %}
+    {% assign alt = include.alt %}
+{% elsif include.is_decorative != true %}
+    {% assign alt = include.caption %}
+{% endif %}
+
+{% assign credit = include.credit %}
+
+{% if include.license %}
+    {% if include.license == "exclusive use" %}
+        {% if include.credit %}
+            {% assign credit = 
+                include.credit
+                | rstrip
+                | append: ", licensed for exclusive use"
+            %}
+        {% endif %}
+    {% endif %}
+{% endif %}
+
+{% capture html_content %}
+    {% if include.link %}
+        <a
+            href="{{include.link}}"
+            class="img-link"
+        >
+    {% endif %}
+    <img
+        src="{% include asset_path
+            file_name = include.file_name
+        %}"
+        alt="{{ alt | escape }}"
+    />
+    {% if include.link %}
+        </a>
+    {% endif %}
+{% endcapture %}
+
+{% if include.credit %}
+    {% capture caption %}
+        {{ include.caption }} *{{ credit }}*{:.credit}
+    {% endcapture %}
+{% else %}
+    {% capture caption %}
+        {{ include.caption }}
+    {% endcapture %}
+{% endif %}
+
+
+{% assign html_caption =
+    caption
+    | strip
+    | markdownify
+%}
+
+{% include authoring/captioned_figure.html
+    html_content =  html_content
+    html_caption =  html_caption
+%}

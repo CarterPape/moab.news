@@ -1,0 +1,31 @@
+/**
+ * Figures
+ */
+figure {
+    margin: $spacing-unit 0;
+    
+    & > :nth-last-child(2) {
+        margin-bottom: 0;
+        
+        & > :last-child {
+            margin-bottom: 0;
+        }
+    }
+    figcaption {
+        margin-top: .4em;
+        font-size: $small-font-size;
+        color: $grey-color;
+        @extend %clearfix;
+        
+        .credit {
+            color: lighten($color: $grey-color, $amount: 20%);
+            float: right;
+        }
+        & > :last-child {
+            margin-bottom: 0;
+        }
+    }    
+    img {
+        display: block;
+    }
+}
