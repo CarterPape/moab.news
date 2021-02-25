@@ -36,6 +36,8 @@ defaults:
 
 kramdown:
     footnote_backlink: "⤴"
+    auto_ids: true
+    auto_id_stripping: true
 
 
 # Build settings
@@ -77,16 +79,3 @@ exclude:
     - .gitignore
     - s3_website.yml
     - .env
-
-jekyll_compose:
-    default_front_matter:
-        drafts:
-            day_of_week:    "%%%%day"
-            subtitle:       
-            description:    
-            image:          
-        posts:
-            day_of_week:    "%%%%day"
-            subtitle:       
-            description:    
-            image:          
