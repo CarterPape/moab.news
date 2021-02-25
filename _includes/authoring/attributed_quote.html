@@ -15,28 +15,28 @@
 {%- endcomment -%}
 
 
-{% assign formatted_quote =
+{%- assign formatted_quote =
     include.quote
     | markdownify
-%}
+-%}
 
-{% assign formatted_by =
+{%- assign formatted_by =
     include.by
     | markdownify
-%}
+-%}
 
-{% capture html_content %}
+{%- capture html_content -%}
     <blockquote
-        {% if include.quote_citation %}
-            cite = "{{include.quote_citation}}"
-        {% endif %}
+        {%- if include.quote_citation -%}
+            cite = "{{- include.quote_citation -}}"
+        {%- endif -%}
     >
-        {{ formatted_quote }}
+        {{- formatted_quote -}}
     </blockquote>
-{% endcapture %}
+{%- endcapture -%}
 
-{% include authoring/captioned_figure.html
+{%- include authoring/captioned_figure.html
     class =         "attributed-quote"
     html_content =  html_content
     html_caption =  formatted_by
-%}
+-%}
