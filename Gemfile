@@ -17,7 +17,7 @@ group :jekyll_plugins do
     gem "jekyll-redirect-from"
     gem "jekyll-seo-tag"
     gem "jekyll-optional-front-matter"
-    gem "jekyll-titles-from-headings"
+    # gem "jekyll-titles-from-headings"
     gem "jekyll-twitter-plugin"
 end
 
