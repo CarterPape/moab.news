@@ -51,7 +51,7 @@ The [Grand County Construction Standards]({% include asset_path file_name="Const
 {% capture quote %}
 Thanks Dave.
 
-So it sounds like we could possibly avoid detention but some methodology of water quality BMPs will be necessary, either structural of non-structural? If we were to look into some type of water reclaimation and reuse for irrigation or graywater does the county have any specific pre-manufactured systems that they prefer or are familiar with?
+So it sounds like we could possibly avoid detention but some methodology of water quality BMPs will be necessary, either structural of non-structural? If we were to look into some type of water reclamation and reuse for irrigation or graywater does the county have any specific pre-manufactured systems that they prefer or are familiar with?
 
 Also, regarding the review process, Mila, from our discussion it sounded like Engineering would not review anything until we had planning approval, does that sound correct?
 

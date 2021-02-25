@@ -1,3 +1,12 @@
 {
-    "editor.detectIndentation": true
+    "editor.detectIndentation": true,
+    "cSpell.words": [
+        "endcapture"
+    ],
+    "cSpell.ignoreWords": [
+        "haha",
+        "megablock",
+        "moabtimes",
+        "photosim"
+    ]
 }
