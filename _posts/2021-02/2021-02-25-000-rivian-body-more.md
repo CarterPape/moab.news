@@ -6,7 +6,7 @@ I'm doing this because the original files I got in response to my request are a 
 
 Today, I formatted three of the email exchanges:
 1. [Initial contact between Rivian and Grand County]({% post_url /2021-02/2021-02-25-010-rivian-emails-initial-meeting %})
-1. [Trying to set up a call]({% post_url /2021-02/2021-02-25-050-rivian-emails-gpd-tries-to-call %})
+1. [Trying to set up a call]({% post_url /2021-02/2021-02-25-051-rivian-emails-gpd-tries-to-call %})
 1. [Questions about bathrooms]({% post_url /2021-02/2021-02-25-100-rivian-emails-bathroom-questions-nov-5 %})
 
 ## Officers find a dead body in a burned car

@@ -3,7 +3,7 @@ categories:
     - Rivian-emails
 ---
 
-# Rivian emails: Setting up an initial meeting
+# Rivian emails: Setting up an initial meeting (Sept. 22 to Oct. 12)
 
 I am [formatting the emails]({% post_url /2021-02/2021-02-25-000-rivian-body-more %}) that [I got from a GRAMA request]({% post_url /2021-02/2021-02-24- %}) regarding exchanges between Grand County and Rivian, an all-electric vehicle manufacturer.
 

@@ -3,9 +3,9 @@ categories:
     - Rivian-emails
 ---
 
-# Rivian emails: Bathroom questions
+# Rivian emails: More bathroom questions (Nov. 5)
 
-Following [an apparent call]({% post_url 2021-02/2021-02-25-050-rivian-emails-gpd-tries-to-call %}) between Josh Lyons, the project manager at GPD Group overseeing the charging station project for Rivian, and Grand County Planning Director Mila Dunbar-Irwin on Oct. 29, Lyons follows up on Nov. 5, seven days later to ask about. Quick emails on the subject ensue, all on the same day.
+Following [an apparent call]({% post_url 2021-02/2021-02-25-051-rivian-emails-gpd-tries-to-call %}) between Josh Lyons, the project manager at GPD Group overseeing the charging station project for Rivian, and Grand County Planning Director Mila Dunbar-Irwin on Oct. 29, Lyons follows up on Nov. 5, seven days later to ask about. Quick emails on the subject ensue, all on the same day.
 
 {% capture quote %}
 Mila,
