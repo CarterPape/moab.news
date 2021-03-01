@@ -12,14 +12,18 @@ dev () {
 }
 
 stage () {
-    # check_names print
+    git pull --tags origin master
+    git push origin master:master
+    # check_names --print-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     htmlproofer $site_path --internal_domains moab.news
     JEKYLL_ENV="production" bundle exec jekyll serve
 }
 
 push () {
-    # check_names die
+    git pull --tags origin master
+    git push origin master:master
+    # check_names --die-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     htmlproofer $site_path --internal_domains moab.news
     s3_website push
