@@ -27,7 +27,7 @@ Orion,
 
 Can you point us to a code section we can review for this requirement? The code would aid us in the right direction and ensure we provide a compliant plan vs an interpretation. Is the parking lot being considered as a rest stop?
 
-Also until the well and septic are finalized, is a temporary restroom acceptable for the parking lot in the interim? Something similar to this: [https://royalrestroomsmountainwest.com/restrooms-%26-showers](https://royalrestroomsmountainwest.com/restrooms-%26-showers) Showers would not be installed, but ADA compliant RRs.
+Also until the well and septic are finalized, is a temporary restroom acceptable for the parking lot in the interim? Something similar to this: [https://royalrestroomsmountainwest.com/restrooms-%26-showers](https://royalrestroomsmountainwest.com/restrooms-%26-showers){:data-proofer-ignore} Showers would not be installed, but ADA compliant RRs.
 
 Then once the Phase 2 amenities are completed and well/septic approved we would install permanent restrooms.
 {% endcapture %}
