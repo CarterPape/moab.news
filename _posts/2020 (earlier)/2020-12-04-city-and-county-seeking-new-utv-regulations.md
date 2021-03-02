@@ -34,7 +34,7 @@ These position papers are in direct contrast with the position of [UTV Utah](htt
 
 Canyonlands Field Airport is going to become Canyonlands Regional Airport. [The branding hasn't yet changed](https://www.grandcountyutah.net/263/Airport) on the county's website, and I have not yet gotten a hold of Airport Director Andy Solsvig to ask when the branding would actually change, but it sounds from the [discussion of the matter](https://youtu.be/JYtp7s1wIeI?t=14034) that it will just phase in over time.
 
-The three-letter identifier that the airport has, CNY, will stay the same. I was disappointed to hear that the county did not want to change the name of the airport to something [more creative](https://www.gcr1.com/5010ReportRouter/48U.pdf), as Solsvig suggested was possible, but c'est la vie.
+The three-letter identifier that the airport has, CNY, will stay the same. I was disappointed to hear that the county did not want to change the name of the airport to something [more creative]({% include asset_path file_name="48U.pdf" %}), as Solsvig suggested was possible, but c'est la vie.
 
 --------------------
 
