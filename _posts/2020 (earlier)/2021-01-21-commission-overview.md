@@ -37,6 +37,7 @@ Once you have assessed the partisan advantage granted by the full spectrum of ma
 It's a straightforward, well-defined process, even if my explanation of it was confusing. The point is: There is an objective manner in which to draw districts, and that's what Walker is proposing to do, and according to Baird, the county has a $10,000 budget for doing so, which should be sufficient.
 
 ### The next phase of the Creekside Estates Planned Unit Development passed.
+{:#creekside-pud}
 
 This got a 6-1 vote of approval with Trisha Hedin, who represents the rural-ish district of Grand County, voting against. The discussion was from timestamps [1:01:48](https://youtu.be/wxflThFNdKo?t=3708) to 1:43:20.
 
