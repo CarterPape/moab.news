@@ -1,6 +1,6 @@
 # Shocking! Margaret L. Hopkin Middle School might not be done on time!
 
-For the first time in the history of public works, a construction timeline is set to stretch past its planned deadline.
+For the first time in the history of public works, a construction timeline is set to stretch past its scheduled completion.
 
 The Margaret L. Hopkin Middle School, which for months was expected to be finished in time for students and teachers to move in early April following their spring break, might not be done until late April, according to Grand County School District Superintendent Taryn Kay.
 
