@@ -1,6 +1,6 @@
 # Utah's statewide mask mandate ends April 10; Grand's may continue.
 
-Utah's statewide mask mandate is expected to end April 10 after the state's legislature passed a bill that would roll bakc the state's general mask mandate but keep in place the requirement for K-12 schools, large gatherings, and localities that order masks.
+Utah's statewide mask mandate is expected to end April 10 after the state's legislature passed a bill that would roll back the state's general mask mandate but keep in place the requirement for K-12 schools, large gatherings, and localities that order masks.
 
 Grand County may be one of the areas that keeps its mask mandate beyond the April 10 end date. The current health order under which the Southeast Utah Health Department and Grand County Commission have placed the area is set to expire June 15.
 
