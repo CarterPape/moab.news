@@ -1,14 +1,12 @@
 {%- assign post_name =
-    page.path 
-    | split: '/'
-    | last
-    | split: '.' 
+    page.filename
+    | split: '.'
     | first
 -%}
 
 {%- assign asset_path =
     post_name
-    | prepend: '/assets/posts/'
+    | prepend: 'assets/posts/'
     | append: '/'
     | append: include.file_name
 -%}

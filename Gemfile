@@ -17,8 +17,20 @@ group :jekyll_plugins do
     gem "jekyll-redirect-from"
     gem "jekyll-seo-tag"
     gem "jekyll-optional-front-matter"
-    # gem "jekyll-titles-from-headings"
     gem "jekyll-twitter-plugin"
+    
+    gem "jekyll-responsive-image",\
+        :path => "/Users/carterpape/Developer/Moab News/gems/jekyll-responsive-image"
+    gem "jekyll-asset-path",\
+        :path => "/Users/carterpape/Developer/Moab News/gems/jekyll-asset-path"
+    gem "jekyll-include-like-parsing",\
+        :path => "/Users/carterpape/Developer/Moab News/gems/jekyll-include-like-parsing"
+    gem "jekyll-file-dates",\
+        :path => "/Users/carterpape/Developer/Moab News/gems/jekyll-file-dates"
+    gem "jekyll-reduce-title-redundancy",\
+        :path => "/Users/carterpape/Developer/Moab News/gems/jekyll-reduce-title-redundancy"
+    gem "jekyll-walk-directory",\
+        :path => "/Users/carterpape/Developer/Moab News/gems/jekyll-walk-directory"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem and associated library.
