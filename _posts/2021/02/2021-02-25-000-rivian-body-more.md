@@ -1,13 +1,13 @@
 # Laying out the Rivian emails; a dead body in a burned car; and more
 
-To facilitate sifting through [the emails]({% post_url /2021-02/2021-02-24- %}) that I got from the county this week containing exchanges between Grand County and Rivian, I am formatting the exchanges in a readable format here on the website, including with links to emailed files.
+To facilitate sifting through [the emails]({% post_url /2021/02/2021-02-24- %}) that I got from the county this week containing exchanges between Grand County and Rivian, I am formatting the exchanges in a readable format here on the website, including with links to emailed files.
 
 I'm doing this because the original files I got in response to my request are a mess. At least they contain too much (and repeated information) instead of too little (presumably), but I still need them in a readable format, and I like creating work for myself.
 
 Today, I formatted three of the email exchanges:
-1. [Initial contact between Rivian and Grand County]({% post_url /2021-02/2021-02-25-010-rivian-emails-initial-meeting %})
-1. [Trying to set up a call]({% post_url /2021-02/2021-02-25-051-rivian-emails-gpd-tries-to-call %})
-1. [Questions about bathrooms]({% post_url /2021-02/2021-02-25-100-rivian-emails-bathroom-questions-nov-5 %})
+1. [Initial contact between Rivian and Grand County]({% post_url /2021/02/2021-02-25-010-rivian-emails-initial-meeting %})
+1. [Trying to set up a call]({% post_url /2021/02/2021-02-25-051-rivian-emails-gpd-tries-to-call %})
+1. [Questions about bathrooms]({% post_url /2021/02/2021-02-25-100-rivian-emails-bathroom-questions-nov-5 %})
 
 ## Officers find a dead body in a burned car
 

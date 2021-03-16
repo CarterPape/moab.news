@@ -5,7 +5,7 @@ categories:
 
 # Rivian emails: GPD tries to set up a phone call (Oct. 22 to Oct. 29)
 
-Following [initial contact]({% post_url 2021-02/2021-02-25-010-rivian-emails-initial-meeting %}) between Rivian and Grand County, the next interaction I see documented between the two starts on Oct. 22, with a representative from GPD Group — an Ohio-based group working with Rivian on the project.
+Following [initial contact]({% post_url 2021/02/2021-02-25-010-rivian-emails-initial-meeting %}) between Rivian and Grand County, the next interaction I see documented between the two starts on Oct. 22, with a representative from GPD Group — an Ohio-based group working with Rivian on the project.
 
 {% capture quote %}
 Good Afternoon Mila,

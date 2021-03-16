@@ -4,7 +4,7 @@ On the long journey toward establishing housing affordability in Moab, allowing 
 
 Grand County Commissioner Trisha Hedin, as the representative of the county district that encompasses the most rural areas of Grand County, is positioning herself to be the primary opponent of housing development in Moab.
 
-[Hedin opposed the project]({% post_url /2020\ \(earlier\)/2021-01-21-commission-overview %}#creekside-pud) White brought before the Grand County Commission on Jan. 19. He sought to refactor 6.5 acres of land into six lots for six homes total, in conformity with the underlying rural residential zoning, which calls for no more than one housing unit per acre.
+[Hedin opposed the project]({% post_url /2021/01/2021-01-21-commission-overview %}#creekside-pud) White brought before the Grand County Commission on Jan. 19. He sought to refactor 6.5 acres of land into six lots for six homes total, in conformity with the underlying rural residential zoning, which calls for no more than one housing unit per acre.
 
 He had backing from some locals on the project. Walt and Carey Dabney, residents of Rosetree Lane, wrote the commission to support White's request because it would result in a larger, two-acre lot that would "allow the preservation of this agricultural land" and be "positive for the area and the county."
 

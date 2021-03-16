@@ -5,7 +5,7 @@ categories:
 
 # Rivian emails: Setting up an initial meeting (Sept. 22 to Oct. 12)
 
-I am [formatting the emails]({% post_url /2021-02/2021-02-25-000-rivian-body-more %}) that [I got from a GRAMA request]({% post_url /2021-02/2021-02-24- %}) regarding exchanges between Grand County and Rivian, an all-electric vehicle manufacturer.
+I am [formatting the emails]({% post_url /2021/02/2021-02-25-000-rivian-body-more %}) that [I got from a GRAMA request]({% post_url /2021/02/2021-02-24- %}) regarding exchanges between Grand County and Rivian, an all-electric vehicle manufacturer.
 
 [Linked here]({% include asset_path file_name="2020-09-22T12-25 [abroek@rivian.com] Electric Vehicle Charging Stations - Rivian Automotive.pdf" %}) is the original file containing this email exchange, which started in Sept. 2020 and kicked off this whole operation:
 
