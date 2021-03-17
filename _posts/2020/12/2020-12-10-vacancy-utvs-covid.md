@@ -24,7 +24,7 @@ The deficit in testing leaves the total number of cases in the state largely a m
     caption =   "Test positivity in Utah."
     credit =    "Chart via Utah Department of Health"
     alt =       "Chart showing test positivity rising in Utah since the start of the pandemic"
-    link =      "https://coronavirus-dashboard.utah.gov/#overview"
+    link =      "https://coronavirus-dashboard.utah.gov/overview.html"
 %}
 
 The continuing rise in case rates has also led to more death and hospitalizations across the state, with a peak of 13 deaths from COVID-19 per day in late November. Roughly 90 people were entering the hospital per day at the time.
