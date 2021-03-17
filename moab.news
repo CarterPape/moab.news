@@ -12,8 +12,6 @@ dev () {
 }
 
 stage () {
-    git pull --tags origin master
-    git push origin master:master
     # check_names --print-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     htmlproofer $site_path --internal_domains moab.news
