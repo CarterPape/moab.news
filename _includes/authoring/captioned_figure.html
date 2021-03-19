@@ -1,0 +1,15 @@
+{%- if include.html_caption -%}
+    {%- assign html_caption = include.html_caption -%}
+{%- else -%}
+    {%- assign html_caption = 
+        include.caption
+        | markdownify
+    -%}
+{%- endif -%}
+
+<figure class="{{- include.class -}}">
+    {{- include.html_content -}}
+    <figcaption>
+        {{- html_caption -}}
+    </figcaption>
+</figure>

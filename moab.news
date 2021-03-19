@@ -1,0 +1,53 @@
+#!/bin/zsh
+set -e
+
+full_path=$(realpath $0)
+dir_path=$(dirname $full_path)
+site_path="$dir_path/_site"
+posts_path="$dir_path/_posts"
+post_assets_path="$dir_path/assets/posts"
+
+dev () {
+    bundle exec jekyll serve
+}
+
+stage () {
+    # check_names --print-on-fail
+    JEKYLL_ENV="production" bundle exec jekyll build
+    htmlproofer $site_path --internal_domains moab.news
+    JEKYLL_ENV="production" bundle exec jekyll serve
+}
+
+push () {
+    git pull --tags origin master
+    git push origin master:master
+    # check_names --die-on-fail
+    JEKYLL_ENV="production" bundle exec jekyll build
+    htmlproofer $site_path --internal_domains moab.news
+    s3_website push
+}
+
+give_names () {
+    $dir_path/scripts/give_names.rb
+}
+
+check_names () {
+    $dir_path/scripts/check_names.rb $1
+}
+
+subcommand="${1}" 
+case ${subcommand} in 
+    dev)
+        dev
+        ;;
+    stage)
+        stage
+        ;;
+    push)
+        push
+        ;;
+    *)
+        echo "`basename ${0}`: usage: dev | stage | push" 
+        exit 1
+        ;; 
+esac 

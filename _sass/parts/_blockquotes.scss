@@ -1,0 +1,25 @@
+blockquote {
+    color: $grey-color;
+    border-left: 1px solid $grey-color-light;
+    margin: 0 0 1em;
+    padding: .5em 1.3rem;
+    font-weight: 300;
+    background-color:rgba(0, 0, 0, .04);
+    
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.attributed-quote {
+    > figcaption {
+        margin-left: 2em;
+        color: $grey-color;
+        
+        > p:first-child {
+            &::before {
+                content: "— ";
+            }
+        }
+    }
+}

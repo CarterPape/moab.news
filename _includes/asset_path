@@ -1,0 +1,33 @@
+{%- if include.version == 2 -%}
+    {%- assign post_path_elements =
+        page.path
+        | split: "/"
+    -%}
+    {{ post_path_elements }}
+    {%- assign internal_asset_path =
+        post_path_elements
+        | pop
+        | push: "assets"
+        | push: include.file_name
+        | join: "/"
+    -%}
+    {%- capture asset_path -%}
+    {%- link {{internal_asset_path}} -%}
+    {%- endcapture -%}
+{%- else -%}
+    {%- assign post_name =
+        page.path 
+        | split: '/'
+        | last
+        | split: '.' 
+        | first
+    -%}
+    {%- assign asset_path =
+        post_name
+        | prepend: '/assets/posts/'
+        | append: '/'
+        | append: include.file_name
+    -%}
+{%- endif -%}
+
+{{- asset_path -}}
