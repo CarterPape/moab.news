@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-    <msapplication>
-        <tile>
-            <square70x70logo src="/assets/favicons/mstile-70x70.png?v=2020-12-04"/>
-            <square150x150logo src="/assets/favicons/mstile-150x150.png?v=2020-12-04"/>
-            <square310x310logo src="/assets/favicons/mstile-310x310.png?v=2020-12-04"/>
-            <wide310x150logo src="/assets/favicons/mstile-310x150.png?v=2020-12-04"/>
-            <TileColor>#cc6600</TileColor>
-        </tile>
-    </msapplication>
-</browserconfig>
+/annex/objects/SHA256E-s533--79bb073aa281c2058634a8c5f32a01bb5e3b47992d819bc685919c9b52131c7c.xml

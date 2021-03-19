@@ -1,13 +1,1 @@
-module FileDates
-    class Generator < Jekyll::Generator
-        def generate(site)
-            site.each_site_file do |document|
-                if File.exists?(document.path)
-                    document.data['date_modified'] = File.stat(document.path).mtime
-                else
-                    document.data['date_modified'] = nil
-                end
-            end
-        end
-    end
-end
+/annex/objects/SHA256E-s412--94775aeab2af8de7c12149245b5abd9660e00aec1e68b442b98999e43adb2287.rb

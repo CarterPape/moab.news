@@ -1,15 +1,1 @@
-module Jekyll
-    class WalkDirectoryTag < Liquid::Tag
-        def initialize(tag_name, text, tokens)
-            super
-            @text = text
-            @tokens = tokens
-        end
-        
-        def render(context)
-            Dir.chdir(@tokens[0])
-        end
-    end
-end
-
-# Liquid::Template.register_tag('walk_directory', Jekyll::WalkDirectoryTag)
+/annex/objects/SHA256E-s373--658b40cea9e5501c498a5a1a9a4c5e40dd054c3a3568cb3913a72bf583815860.rb
