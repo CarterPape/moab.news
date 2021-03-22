@@ -15,7 +15,7 @@ stage () {
     # check_names --print-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     htmlproofer $site_path --internal_domains moab.news
-    JEKYLL_ENV="production" bundle exec jekyll serve
+    JEKYLL_ENV="production" bundle exec jekyll serve --skip-initial-build
 }
 
 push () {

@@ -79,3 +79,5 @@ exclude:
     - .gitignore
     - s3_website.yml
     - .env
+    - moab.news
+    - scripts/
