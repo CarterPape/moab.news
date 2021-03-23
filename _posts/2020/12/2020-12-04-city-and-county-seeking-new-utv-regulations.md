@@ -46,7 +46,7 @@ Something I need to figure out is an efficient way to serve or optimize images. 
 
 I’m thinking I’ll use [ImageMagick](https://imagemagick.org/) for image processing, and I could possibly integrate it as a [Jekyll plugin](https://jekyllrb.com/docs/plugins/) to do the image processing as part of the site building process so that I can simply drop in my full-resolution photos, add link to them in posts, and go to preview and publish the site without thinking about resizing and creating multiple image versions and sizes. Nice.
 
-As I’m thinking about this, I am also realizing that likely the reason I have been displeased in the past with the page speed of [`carterpape.com`](https://carterpape.com/) is likely solely to do with the time it takes to load images. An analysis by PageSpeed Insights reveals this to be [exactly the case](https://developers.google.com/speed/pagespeed/insights/?url=http://carterpape.com&tab=mobile).
+As I’m thinking about this, I am also realizing that likely the reason I have been displeased in the past with the page speed of [`carterpape.com`](https://carterpape.com/) is likely solely to do with the time it takes to load images. An analysis by PageSpeed Insights reveals this to be [exactly the case](https://developers.google.com/speed/pagespeed/insights/?url=https://carterpape.com&tab=mobile).
 
 I am discovering that there are some oddities with how S3 _does not_ do URI rewrites that GitHub Pages and the default [Jekyll command line tool](https://jekyllrb.com/docs/usage/) (which comes with an extremely lightweight server) fixes. For example, if I visit `moab.news/index`, I get a 404 page when I would like to get the index page, which I know is there. Meanwhile, if I do `carterpape.com/index`, I get the page I expect to see.
 

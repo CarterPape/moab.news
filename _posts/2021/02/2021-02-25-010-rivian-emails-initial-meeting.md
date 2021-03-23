@@ -16,7 +16,7 @@ My name is Ashley Broek and I work for a company called Rivian Automotive. I cal
 
 We are an all-electric vehicle manufacturer and will be rolling out our all electric Amazon Prime Vans, R1T Truck, and R1S SUV the middle of 2021. I work on the team that will be building out the charging infrastructure to support the introduction of our electric vehicles to the market.
 
-We are currently in the process of purchasing 5.5 acres ([Parcel #04-020-0042](http://tax.grandcountyutah.net/grandcountyutah/list-detail.php?m=x2137454c4z284&url=http%3A%2F%2Ftax.grandcountyutah.net%2Fgrandcountyutah%2Flist-page.php)) just north of highway 313 and just south of the under campus property. We are excited to develop this property (following Grand County code requirements) to enable DC fast charging solutions for Rivian drivers as well as level 2 charging solutions for other EV drivers.
+We are currently in the process of purchasing 5.5 acres ([Parcel #04-020-0042](https://tax.grandcountyutah.net/grandcountyutah/list-detail.php?m=x2137454c4z284&url=http%3A%2F%2Ftax.grandcountyutah.net%2Fgrandcountyutah%2Flist-page.php)) just north of highway 313 and just south of the under campus property. We are excited to develop this property (following Grand County code requirements) to enable DC fast charging solutions for Rivian drivers as well as level 2 charging solutions for other EV drivers.
 
 Our goal is to change the way electric vehicle driver’s view adventure and want to enable travel to key destinations such as Moab. Not only would this location enable charging solutions, but we plan to incorporate some basic amenities such as restrooms, seating area to enjoy the views, and basic vending.
 
