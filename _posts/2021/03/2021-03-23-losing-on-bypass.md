@@ -28,6 +28,7 @@ There's a part of the regional transportation plan that shows the results of a s
 
 {% include authoring/captioned_image.html
     file_name = "DRAFT_Moab+Spanish_Valley_RTP_Page_41.png"
+    alt = "image of page 41 of the document linked with the image"
     is_decorative = false
     class = "paper"
     linked_file_name = "DRAFT_Moab+Spanish_Valley_RTP.pdf"
