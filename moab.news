@@ -14,7 +14,7 @@ dev () {
 stage () {
     # check_names --print-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
-    htmlproofer $site_path --internal_domains moab.news
+    proof_html
     JEKYLL_ENV="production" bundle exec jekyll serve --skip-initial-build
 }
 
@@ -23,7 +23,7 @@ push () {
     git push origin master:master
     # check_names --die-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
-    htmlproofer $site_path --internal_domains moab.news
+    proof_html
     s3_website push
 }
 
@@ -33,6 +33,10 @@ give_names () {
 
 check_names () {
     $dir_path/scripts/check_names.rb $1
+}
+
+proof_html () {
+    htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_sri --check_img_http
 }
 
 subcommand="${1}" 
