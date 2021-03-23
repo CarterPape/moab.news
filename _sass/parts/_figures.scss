@@ -1,6 +1,6 @@
 /**
- * Figures
- */
+* Figures
+*/
 figure {
     margin: $spacing-unit 0;
     
@@ -27,5 +27,42 @@ figure {
     }    
     img {
         display: block;
+    }
+}
+
+/* Messy stack of paper */
+figure.paper .img-wrapper {
+    background: #fff;
+    position: relative;
+    
+    &, &::before, &::after {
+        /* Styles to distinguish sheets from one another */
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+        border: 0.25px solid #bbb;
+    }
+    
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        background-color: #f9f9f9;
+    }
+
+    &::before {
+        background-color: #f9f9f9;
+        height: 100%;
+        width: 100%;
+        right: 3px;
+        top: 0;
+        transform: rotate(-1deg);
+        z-index: -1;
+    }
+    
+    &::after {
+        height: 100%;
+        width: 100%;
+        top: 1px;
+        right: -5px;
+        transform: rotate(1deg);
+        z-index: -2;
     }
 }

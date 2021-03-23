@@ -41,14 +41,23 @@
             href="{{include.link}}"
             class="img-link"
         >
+    {%- elsif include.linked_file_name -%}
+        <a
+            href="{%- include asset_path
+                file_name = include.linked_file_name
+            -%}"
+            class="img-link"
+        >
     {%- endif -%}
-    <img
-        src="{%- include asset_path
-            file_name = include.file_name
-        -%}"
-        alt="{{ alt | escape }}"
-    />
-    {%- if include.link -%}
+    <div class="img-wrapper">
+        <img
+            src="{%- include asset_path
+                file_name = include.file_name
+            -%}"
+            alt="{{ alt | escape }}"
+        />
+    </div>
+    {%- if include.link or include.linked_file_name -%}
         </a>
     {%- endif -%}
 {%- endcapture -%}
@@ -72,4 +81,5 @@
 {%- include authoring/captioned_figure.html
     html_content =  html_content
     html_caption =  html_caption
+    class =         include.class
 -%}
