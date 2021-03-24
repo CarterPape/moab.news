@@ -15,6 +15,7 @@ stage () {
     # check_names --print-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     proof_html
+    rclone sync --checksum --progress --fast-list --dry-run $site_path s3:moab.news
     JEKYLL_ENV="production" bundle exec jekyll serve --skip-initial-build
 }
 
@@ -24,7 +25,7 @@ push () {
     # check_names --die-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     proof_html
-    rclone sync --checksum --progress --fast-list $site_path s3_carterpape_com:moab.news
+    rclone sync --checksum --progress --fast-list $site_path s3:moab.news
 }
 
 give_names () {
@@ -36,7 +37,7 @@ check_names () {
 }
 
 proof_html () {
-    htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_sri --check_img_http
+    htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_img_http
 }
 
 subcommand="${1}" 
