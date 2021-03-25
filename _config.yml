@@ -16,6 +16,7 @@ email:          carter@moab.news
 tagline:        Weekday morning updates from Grand County, Utah
 description:    News in your inbox every weekday morning with the latest out of Grand County, Utah
 author:         carterpape
+lang:           en
 
 # Formatting settings
 
@@ -47,9 +48,11 @@ livereload: true
 open_url:   true
 
 liquid:
-    error_mode:         warn
+    error_mode:         strict
     strict_variables:   false
     strict_filters:     false
+
+strict_front_matter: true
 
 sass:
     style: compressed
@@ -81,3 +84,5 @@ exclude:
     - .env
     - moab.news
     - scripts/
+    - README.md
+    - LICENSE

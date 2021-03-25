@@ -30,7 +30,6 @@ end
 gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 
 
-gem "s3_website"
 gem "classifier-reborn"
 gem "webrick"
 gem "html-proofer"
