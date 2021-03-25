@@ -8,24 +8,19 @@ posts_path="$dir_path/_posts"
 post_assets_path="$dir_path/assets/posts"
 
 dev () {
-    bundle exec jekyll serve
+    bundle exec jekyll serve --incremental
 }
 
 test () {
     # check_names --print-on-fail
-    JEKYLL_ENV="production" bundle exec jekyll build
+    JEKYLL_ENV="production" bundle exec jekyll build --incremental
     proof_html
     rclone sync --checksum --progress --fast-list --dry-run $site_path s3:moab.news
 }
 
-stage () {
-    test
-    JEKYLL_ENV="production" bundle exec jekyll serve --skip-initial-build
-}
-
 push () {
-    git pull --tags origin master
-    git push origin master:master
+    git pull
+    git push
     # check_names --die-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     proof_html
@@ -56,7 +51,7 @@ case ${subcommand} in
         push
         ;;
     *)
-        echo "`basename ${0}`: usage: dev | test | stage | push" 
+        echo "`basename ${0}`: usage: dev | test | push" 
         exit 1
         ;; 
 esac 
