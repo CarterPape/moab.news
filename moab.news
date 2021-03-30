@@ -44,8 +44,8 @@ case ${subcommand} in
     dev)
         dev
         ;;
-    stage)
-        stage
+    test)
+        test
         ;;
     push)
         push
