@@ -8,15 +8,16 @@
     -%}
 {%- endif -%}
 
-{%- assign credit = include.credit -%}
+{%- assign credit =
+    include.credit
+    | rstrip
+-%}
 
 {%- if include.license -%}
     {%- if include.credit -%}
         {%- assign credit = 
-            include.credit
-            | rstrip
+            credit
             | append: ", "
-            | prepend: "&copy; "
         -%}
     {%- else -%}
         {%- assign credit = "" -%}
