@@ -13,6 +13,7 @@ dev () {
 
 test () {
     # check_names --print-on-fail
+    # check_for_archived_pages
     JEKYLL_ENV="production" bundle exec jekyll build --incremental
     proof_html
     rclone sync --checksum --progress --fast-list --dry-run $site_path s3-for-moab-news:moab.news
@@ -22,6 +23,7 @@ push () {
     git pull
     git push
     # check_names --die-on-fail
+    # archive_new_links
     JEKYLL_ENV="production" bundle exec jekyll build
     proof_html
     rclone sync --checksum --progress --fast-list $site_path s3-for-moab-news:moab.news
