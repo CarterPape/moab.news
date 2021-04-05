@@ -15,7 +15,7 @@ test () {
     # check_names --print-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build --incremental
     proof_html
-    rclone sync --checksum --progress --fast-list --dry-run $site_path s3:moab.news
+    rclone sync --checksum --progress --fast-list --dry-run $site_path s3-for-moab-news:moab.news
 }
 
 push () {
@@ -24,7 +24,7 @@ push () {
     # check_names --die-on-fail
     JEKYLL_ENV="production" bundle exec jekyll build
     proof_html
-    rclone sync --checksum --progress --fast-list $site_path s3:moab.news
+    rclone sync --checksum --progress --fast-list $site_path s3-for-moab-news:moab.news
 }
 
 give_names () {
