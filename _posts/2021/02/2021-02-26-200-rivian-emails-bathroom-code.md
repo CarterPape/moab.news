@@ -122,7 +122,7 @@ Following that exchange between county and health department employees, GPD repl
 {% capture quote %}
 This is Zachary Whitney with GPD Group. I will be taking point on a large majority of coordination efforts with Grand County for the Rivian Automotive Project located along US Highway 191, North of 313:
 
-![Map of chargign station location with red circle around property]({% include asset_path file_name="Acr246271875553283060010.jpg" %})
+![Map of chargign station location with red circle around property]({% include asset_path from_post="2021-02-26-050-rivian-emails-health-department" file_name="Acr246271875553283060010.jpg" %})
 
 Rivian Automotive is an all-electric vehicle manufacturer and will be rolling out our all electric Amazon Prime Vans, R1T Truck, and R1S SUV the middle of 2021. They are currently in the process of purchasing 5.5 acres (Parcel #04-020-0042) just north of highway 313. The goal is to change the way electric vehicle driver’s view adventure and want to enable travel to key destinations such as Moab. Not only would this location enable charging solutions, but there is a plan to incorporate some basic amenities such as restrooms, seating area to enjoy the views, and basic vending (grab and go style with healthier options, not chips and candy bars).
 
