@@ -1,19 +1,5 @@
-{%- if include.version == 2 -%}
-    {%- assign post_path_elements =
-        page.path
-        | split: "/"
-    -%}
-    {{ post_path_elements }}
-    {%- assign internal_asset_path =
-        post_path_elements
-        | pop
-        | push: "assets"
-        | push: include.file_name
-        | join: "/"
-    -%}
-    {%- capture asset_path -%}
-    {%- link {{internal_asset_path}} -%}
-    {%- endcapture -%}
+{%- if include.from_post -%}
+    {%- assign post_name = include.from_post -%}
 {%- else -%}
     {%- assign post_name =
         page.path 
@@ -22,12 +8,30 @@
         | split: '.' 
         | first
     -%}
-    {%- assign asset_path =
-        post_name
-        | prepend: '/assets/posts/'
-        | append: '/'
-        | append: include.file_name
-    -%}
 {%- endif -%}
+
+{%- assign post_year =
+    post_name
+    | split: "-"
+    | first
+-%}
+
+{%- assign post_month =
+    post_name
+    | split: "-"
+    | slice: 1
+    | first
+-%}
+
+{%- assign asset_path =
+    '/assets/posts/'
+    | append: post_year
+    | append: '/'
+    | append: post_month
+    | append: '/'
+    | append: post_name
+    | append: '/'
+    | append: include.file_name
+-%}
 
 {{- asset_path -}}

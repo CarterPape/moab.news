@@ -52,9 +52,16 @@
     {%- endif -%}
     <div class="img-wrapper">
         <img
-            src="{%- include asset_path
-                file_name = include.file_name
-            -%}"
+            {% if include.from_post %}
+                src="{%- include asset_path
+                    from_post = include.from_post
+                    file_name = include.file_name
+                -%}"
+            {% else %}
+                src="{%- include asset_path
+                    file_name = include.file_name
+                -%}"
+            {% endif %}
             alt="{{ alt | escape }}"
         />
     </div>
