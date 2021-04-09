@@ -33,7 +33,7 @@ I guess the next step is to contact Polaris and some other UTV manufacturers to 
 ## Local survivors of domestic abuse receive supplies for starting over.
 
 {% include authoring/captioned_image.html
-    file_name = "Seekhaven donation.jpg"
+    image_name = "Seekhaven donation.jpg"
     caption =   "Moab Rotary Club recently donated 10 sets of \"Starter Boxes\" to Seekhaven on Monday. The kits include supplies like dishes, cookware, cleaning supplies, and many other items needed for setting up an apartment. The kits are provided to local survivors of domestic abuse who need everyday supplies after moving out of dangerous living situations."
     credit =    "Photo by Carter Pape"
     license =   "exclusive use"

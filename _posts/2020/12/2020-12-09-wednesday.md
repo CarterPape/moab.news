@@ -13,7 +13,7 @@ Waking up is hard... This is late again, but at least I wrote it yesterday inste
 ## Questions about testing and vaccines in Moab, answered.
 
 {% include authoring/captioned_image.html
-    file_name = "hospital-testing.jpeg"
+    image_name = "hospital-testing.jpeg"
     caption =   ""
     credit =    "Photo by Carter Pape"
     license =   "exclusive use"

@@ -27,7 +27,7 @@ The whole conceit of the bypass is that it is ill-defined. There is no bypass; t
 There's a part of the regional transportation plan that shows the results of a survey of 277 people asked about their support for each of three transportation infrastructure projects.
 
 {% include authoring/captioned_image.html
-    file_name = "DRAFT_Moab+Spanish_Valley_RTP_Page_41.png"
+    image_name = "DRAFT_Moab+Spanish_Valley_RTP_Page_41.png"
     alt = "image of page 41 of the document linked with the image"
     is_decorative = false
     class = "paper"

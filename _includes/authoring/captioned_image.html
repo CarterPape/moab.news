@@ -22,18 +22,29 @@
     {%- else -%}
         {%- assign credit = "" -%}
     {%- endif -%}
-    {%- if include.license == "exclusive use" -%}
-        {%- assign credit =
-            credit
-            | append: "licensed for exclusive use"
+    
+    {%- assign license = include.license -%}
+    
+    {%- if include.license_link -%}
+        {%- assign license_link = include.license_link -%}
+    {%- elsif include.license == "exclusive use" -%}
+        {%- assign license = "for exclusive use" -%}
+        {%- capture license_link -%}
+            {%- link exclusive-use.md -%}
+        {%- endcapture -%}
+    {%- elsif include.license == "CC BY-SA 4.0" -%}
+        {%- assign license_link = "https://creativecommons.org/licenses/by-sa/4.0/"
         -%}
     {%- endif -%}
-    {%- if include.license == "CC BY-SA 4.0" -%}
-        {%- assign credit = 
-            credit
-            | append: "licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
-        -%}
-    {%- endif -%}
+    
+    {%- assign credit =
+        credit
+        | append: "licensed ["
+        | append: license
+        | append: "]("
+        | append: license_link
+        | append: ")"
+    -%}
 {%- endif -%}
 
 {%- capture html_content -%}
@@ -52,14 +63,18 @@
     {%- endif -%}
     <div class="img-wrapper">
         <img
-            {% if include.from_post %}
+            {% if include.image_url %}
+                src="{{ include.image_url }}"
+            {% elsif include.image_path %}
+                src="{% link {{ include.image_path }} %}"
+            {% elsif include.from_post %}
                 src="{%- include asset_path
                     from_post = include.from_post
-                    file_name = include.file_name
+                    file_name = include.image_name
                 -%}"
-            {% else %}
+            {% elsif include.image_name %}
                 src="{%- include asset_path
-                    file_name = include.file_name
+                    file_name = include.image_name
                 -%}"
             {% endif %}
             alt="{{ alt | escape }}"

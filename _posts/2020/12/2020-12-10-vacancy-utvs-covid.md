@@ -11,7 +11,7 @@ These are two stories I wrote yesterday for the newspaper we are sending out tod
 ## Utah is still flubbing its pandemic response and recently set a record for testing deficit.
 
 {% include authoring/captioned_image.html
-    file_name = "COVID-19 chart for Dec. 10.png"
+    image_name = "COVID-19 chart for Dec. 10.png"
     alt =       "Chart showing per capita new cases in Grand County, Utah, the U.S., Navajo Nation, and San Juan County"
 %}
 
@@ -20,7 +20,7 @@ The State of Utah has, since June, sat above an 8% test positivity rate, indicat
 The deficit in testing leaves the total number of cases in the state largely a mystery because the deficit in tests has meant too little testing to properly assess the actual number of cases. Regardless, the number of identified cases of COVID-19 has increased since Thanksgiving to over 3,000 new cases per day.
 
 {% include authoring/captioned_image.html
-    file_name = "Testing levels.png"
+    image_name = "Testing levels.png"
     caption =   "Test positivity in Utah."
     credit =    "Chart via Utah Department of Health"
     alt =       "Chart showing test positivity rising in Utah since the start of the pandemic"
@@ -46,7 +46,7 @@ In the meantime, he advised, two vaccine candidates are in the process of being 
 ## New county commissioner to be appointed Jan. 5; applications due Dec. 30.
 
 {% include authoring/captioned_image.html
-    file_name = "District 3 (upper).jpg"
+    image_name = "District 3 (upper).jpg"
     caption =   "This map shows the boundaries of the northern part of Grand County Commission District 3, which encompasses part of the east side of Moab and Spanish Valley. The district also extends north to the river."
     credit =    "Map via Google Earth"
     alt =       "A map of the boundaries of Grand County Commission District 3, which encompasses part of northeastern Moab"
@@ -58,7 +58,7 @@ As Grand County Commission Vice Chair Jaylyn Hawks steps down from her position 
 Declarations of candidacy to the position are due to the Grand County Clerk’s office by the end of the day, Dec. 30. The declaration may include a letter of interest and résumé.
 
 {% include authoring/captioned_image.html
-    file_name = "District 3 (lower).jpg"
+    image_name = "District 3 (lower).jpg"
     caption =   "This map shows the boundaries of the southern part of Grand County Commission District 3, which encompasses all Spanish Valley residences southeast of Spanish Valley Drive."
     credit =    "Map via Google Earth"
     alt =       "A map of the boundaries of the southern part of Grand County Commission District 3, which encompasses part of Spanish Valley"
