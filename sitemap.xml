@@ -1,0 +1,45 @@
+---
+layout: null
+sitemap:
+    exclude: true
+regenerate: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- for each_post in site.posts -%}
+        {%- unless each_post.published == false or each_post.sitemap.exclude == true -%}
+            <url>
+                <loc>{{ each_post.url | absolute_url }}</loc>
+                {%- if each_post.sitemap.lastmod -%}
+                    <lastmod>{{ each_post.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+                {%- elsif each_post.date -%}
+                    <lastmod>{{ each_post.date | date_to_xmlschema }}</lastmod>
+                {%- endif -%}
+            </url>
+        {%- endunless -%}
+    {%- endfor -%}
+    {%- for each_page in site.pages -%}
+        {%- unless each_page.sitemap.exclude == true or each_page.name == "feed.xml" -%}
+            <url>
+                <loc>{{ each_page.url | absolute_url }}</loc>
+                {%- if each_page.sitemap.lastmod -%}
+                    <lastmod>{{ each_page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+                {%- elsif each_page.date -%}
+                    <lastmod>{{ each_page.date | date_to_xmlschema }}</lastmod>
+                {%- endif -%}
+            </url>
+        {%- endunless -%}
+    {%- endfor -%}
+    {%- for each_static_file in site.static_files -%}
+        {%- unless each_static_file.sitemap.exclude == true or each_static_file.name == "feed.xml" -%}
+            <url>
+                <loc>{{ each_static_file.path | absolute_url }}</loc>
+                {%- if each_static_file.sitemap.lastmod -%}
+                    <lastmod>{{ each_static_file.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+                {%- elsif each_static_file.modified_time -%}
+                    <lastmod>{{ each_static_file.modified_time | date_to_xmlschema }}</lastmod>
+                {%- endif -%}
+            </url>
+        {%- endunless -%}
+    {%- endfor -%}
+</urlset>
