@@ -13,9 +13,8 @@
 url:            "https://moab.news"
 title:          Moab News
 email:          carter@moab.news
-tagline:        Weekday morning updates from Grand County, Utah
-description:    News in your inbox every weekday morning with the latest out of Grand County, Utah
-author:         carterpape
+tagline:        Weekday updates on the news in Grand County, Utah
+author:         carter_pape
 lang:           en
 
 # Formatting settings

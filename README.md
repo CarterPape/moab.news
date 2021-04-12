@@ -1,3 +1,3 @@
 # [moab.news](https://moab.news)
 
-## Daily updates on the news out of Moab, Utah
+## Weekday updates on the news in Grand County, Utah
