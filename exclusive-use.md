@@ -37,8 +37,8 @@ Of course, not every photo I take or program I create belongs to my employer. It
 {% include authoring/captioned_image.html
     image_path = "assets/pages/exclusive-use/circ09_Page_1.png"
     link = "/assets/pages/exclusive-use/circ09.pdf"
-    class = "paper"
-    alt = "alt text (recommended if image not decorative)"
+    class = "torn-paper"
+    alt = "excerpt of the linked document with the first part of the definition of 'work made for hire' highlighted"
     is_decorative = false
     credit = "Carter Pape"
     license = "exclusive use"
