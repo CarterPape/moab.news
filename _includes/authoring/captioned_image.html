@@ -35,16 +35,36 @@
     {%- elsif include.license == "CC BY-SA 4.0" -%}
         {%- assign license_link = "https://creativecommons.org/licenses/by-sa/4.0/"
         -%}
+    {%- else -%}
+        {% assign custom_license = true -%}
     {%- endif -%}
     
-    {%- assign credit =
-        credit
-        | append: "licensed ["
-        | append: license
-        | append: "]("
-        | append: license_link
-        | append: ")"
-    -%}
+    {%- if custom_license -%}
+        {%- if license_link -%}
+            {%- assign credit =
+                credit
+                | append: "["
+                | append: license
+                | append: "]("
+                | append: license_link
+                | append: ")"
+            -%}
+        {%- else -%}
+            {%- assign credit =
+                credit
+                | append: license
+            -%}
+        {%- endif -%}
+    {%- else -%}
+        {%- assign credit =
+            credit
+            | append: "licensed ["
+            | append: license
+            | append: "]("
+            | append: license_link
+            | append: ")"
+        -%}
+    {%- endif -%}
 {%- endif -%}
 
 {%- capture html_content -%}
