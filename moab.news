@@ -27,6 +27,7 @@ push () {
     JEKYLL_ENV="production" bundle exec jekyll build
     proof_html
     rclone sync --checksum --progress --fast-list $site_path s3-for-moab-news:moab.news
+    # set the caching headers on all files that need it with https://s3tools.org/s3cmd (maybe)
 }
 
 give_names () {
@@ -38,7 +39,8 @@ check_names () {
 }
 
 proof_html () {
-    htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_img_http --timeframe 2d
+    # htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_img_http --timeframe 2d
+    htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_img_http
 }
 
 subcommand="${1}" 
