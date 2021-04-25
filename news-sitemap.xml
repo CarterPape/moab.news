@@ -16,7 +16,7 @@ regenerate: true
             or each_post.sitemap.news.exclude == true
         -%}
             <url>
-                <loc>{{ each_post.url | absolute_url }}</loc>
+                <loc>{{ each_post.url | absolute_url | xml_escape }}</loc>
                 {%- if each_post.sitemap.lastmod -%}
                     <lastmod>{{ each_post.sitemap.lastmod | date_to_xmlschema }}</lastmod>
                 {%- elsif each_post.date -%}
