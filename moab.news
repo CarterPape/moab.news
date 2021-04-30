@@ -39,8 +39,7 @@ check_names () {
 }
 
 proof_html () {
-    # htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_img_http --timeframe 2d
-    htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_img_http
+    htmlproofer $site_path --internal_domains moab.news --assume_extension --enforce_https --check_favicon --check_html --check_opengraph --check_img_http --timeframe 2d
 }
 
 subcommand="${1}" 
