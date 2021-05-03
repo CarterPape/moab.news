@@ -1,3 +1,9 @@
+{%- assign site_author = 
+    site.data.authors[
+        site.author
+    ]
+-%}
+
 <footer
     class="
         site-footer
@@ -29,28 +35,15 @@
             >
                 <ul class="contact-list">
                     <li class="p-name">
-                        {%- if site.author -%}
-                            {{-
-                                site.data.authors[
-                                    site.author
-                                ].name
-                                | escape
-                            -}}
-                        {%- else -%}
-                            {{- site.title
-                                | escape
-                            -}}
-                        {%- endif -%}
+                        {{- site_author.name | escape -}}
                     </li>
-                    {%- if site.email -%}
-                        <li>
-                            <a class="u-email"
-                                href="mailto:{{ site.email }}"
-                            >
-                                {{ site.email }}
-                            </a>
-                        </li>
-                    {%- endif -%}
+                    <li>
+                        <a class="u-email"
+                            href="mailto:{{- site_author.email -}}"
+                        >
+                            {{ site_author.email }}
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-col footer-col-2">

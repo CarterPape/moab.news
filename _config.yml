@@ -8,14 +8,13 @@
 
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files, you will see them accessed via {{ site.title }}, {{ site.email }}, and so on. You can create any custom variable you would like, and they will be accessible in the templates via {{ site.myvariable }}.
+# These are used to personalize your new site. If you look in the HTML files, you will see them accessed via {{ site.title }}, {{ site.tagline }}, and so on. You can create any custom variable you would like, and they will be accessible in the templates via {{ site.myvariable }}.
 
 url:            "https://moab.news"
 title:          Moab News
-email:          carter@moab.news
 tagline:        Weekday updates on the news in Grand County, Utah
 author:         carter_pape
-lang:           en
+lang:           en-us
 
 # Formatting settings
 

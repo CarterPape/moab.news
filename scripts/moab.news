@@ -1,11 +1,12 @@
 #!/bin/zsh
 set -e
 
-full_path=$(realpath $0)
-dir_path=$(dirname $full_path)
-site_path="$dir_path/_site"
-posts_path="$dir_path/_posts"
-post_assets_path="$dir_path/assets/posts"
+script_path=$(realpath $0)
+scripts_dir_path=$(dirname $script_path)
+project_dir_path=$(dirname $scripts_dir_path)
+site_path="$project_dir_path/_site"
+posts_path="$project_dir_path/_posts"
+post_assets_path="$project_dir_path/assets/posts"
 
 dev () {
     bundle exec jekyll serve --incremental
