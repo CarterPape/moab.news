@@ -8,7 +8,7 @@ image:
 ---
 
 
-Last time I wrote about [the city and county's the legislative priorities](https://substack.moab.news/p/covid-19-is-overwhelming-our-contact-tracing-the), I wrote about TRT reform. There is one other topic that is going to be highly relevant for the county in the state's upcoming legislative session: UTVs.
+Last time I wrote about the city and county's the legislative priorities, I wrote about TRT reform. There is one other topic that is going to be highly relevant for the county in the state's upcoming legislative session: UTVs.
 
 There is a third topic the county is trying to lobby on, and it's relevant outside the legislative session: The proposed Book Cliffs Highway. I'll get to that another day.
 
