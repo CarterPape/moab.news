@@ -17,7 +17,14 @@ test () {
     # check_for_archived_pages
     JEKYLL_ENV="production" bundle exec jekyll build --incremental
     proof_html
-    rclone sync --checksum --progress --fast-list --track-renames --dry-run $site_path s3-for-moab-news:moab.news
+    rclone sync \
+        --checksum \
+        --progress \
+        --fast-list \
+        --track-renames \
+        --dry-run \
+        $site_path \
+        s3-for-moab-news:moab.news
 }
 
 push () {
@@ -27,7 +34,13 @@ push () {
     # archive_new_links
     JEKYLL_ENV="production" bundle exec jekyll build
     proof_html
-    rclone sync --checksum --progress --fast-list --track-renames $site_path s3-for-moab-news:moab.news
+    rclone sync \
+        --checksum \
+        --progress \
+        --fast-list \
+        --track-renames \
+        $site_path \
+        s3-for-moab-news:moab.news
     # set the caching headers on all files that need it with https://s3tools.org/s3cmd (maybe)
     # purge the cache of updated files
 }
