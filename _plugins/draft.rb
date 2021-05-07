@@ -7,7 +7,7 @@ module Jekyll
         end
         
         def render(context)
-            "<span class='draft-language'>" + @text + "</span>"
+            "<span class='draft-language' title='draft language; this may change later'>" + @text + "</span>"
         end
     end
 end
