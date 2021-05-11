@@ -26,6 +26,12 @@ defaults:
     -
         scope:
             path: ""
+            type: "pages"
+        values:
+            layout: "page"
+    -
+        scope:
+            path: ""
             type: "posts"
         values:
             authors: ["Carter Pape"]
@@ -38,6 +44,8 @@ kramdown:
     auto_ids: true
     auto_id_stripping: true
 
+header_pages:
+    - what-is-this.md
 
 # Build settings
 
