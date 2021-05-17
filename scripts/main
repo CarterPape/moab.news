@@ -58,7 +58,7 @@ purge_htmlproofer_cache_of_internal_query_links() {
 }
 
 proof_html () {
-    purge_htmlproofer_cache_of_internal_query_links()
+    purge_htmlproofer_cache_of_internal_query_links
     htmlproofer $site_path  \
         --internal_domains moab.news \
         --assume_extension \
