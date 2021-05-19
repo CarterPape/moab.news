@@ -70,7 +70,6 @@ proof_html () {
         --report_invalid_tags \
         --report_missing_names \
         --report_eof_tags \
-        --report_mismatched_tags \
         --timeframe 2d
 }
 
