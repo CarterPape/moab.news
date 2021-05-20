@@ -1,9 +1,10 @@
-<!-- Cloudflare Web Analytics -->
-<script
-    defer
-    src = 'https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon = '{"token": "3925cc3c908640f18a2395db4e0e071d"}'
-    integrity = "ckC4hYiN9RMotaSczAKkh6mvMsTE+vm39zYA5p1hQ4SY6mIyVBcXe+0WNBj3VWRK"
-    crossorigin = "anonymous"
-></script>
-<!-- End Cloudflare Web Analytics -->
+{% if jekyll.environment == "production" %}
+    <!-- Cloudflare Web Analytics -->
+    <script
+        defer
+        src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": {{ site.cloudflare_token }}}'
+    >
+    </script>
+    <!-- End Cloudflare Web Analytics -->
+{% endif %}
