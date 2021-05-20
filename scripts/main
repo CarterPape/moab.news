@@ -41,8 +41,17 @@ push () {
         --track-renames \
         $site_path \
         s3-for-moab-news:moab.news
+    
+    index
     # set the caching headers on all files that need it with https://s3tools.org/s3cmd (maybe)
     # purge the cache of updated files
+}
+
+index () {
+    set -o allexport
+    source "$project_dir_path/.env"
+    set +o allexport
+    bundle exec jekyll algolia
 }
 
 give_names () {
@@ -84,8 +93,11 @@ case ${subcommand} in
     push)
         push
         ;;
+    index)
+        index
+        ;;
     *)
-        echo "`basename ${0}`: usage: dev | test | push" 
+        echo "`basename ${0}`: usage: dev | test | push | index"
         exit 1
-        ;; 
+        ;;
 esac

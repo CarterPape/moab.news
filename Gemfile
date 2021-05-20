@@ -19,6 +19,8 @@ group :jekyll_plugins do
     gem "jekyll-optional-front-matter"
     gem "jekyll-twitter-plugin"
     gem "jekyll-reduce-title-redundancy"
+    gem 'jekyll-asciidoc'
+    gem 'jekyll-algolia'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem and associated library.
