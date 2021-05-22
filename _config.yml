@@ -62,9 +62,6 @@ liquid:
 
 strict_front_matter: true
 
-sass:
-    style: compressed
-
 jekyll-minifier:
     compress_css: false
 
@@ -87,6 +84,8 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - node_modules/
+    - package.json
+    - package-lock.json
     - vendor/bundle/
     - vendor/cache/
     - vendor/gems/
@@ -97,3 +96,7 @@ exclude:
     - scripts/
     - README.md
     - LICENSE
+    - webpack.config.js
+    - webpack/
+    - .babelrc
+    - _scss/

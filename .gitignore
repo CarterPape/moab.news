@@ -104,6 +104,10 @@ _sass.v2
 
 s3_website.yml
 
+assets/generated/
+
+package-lock.json
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,react

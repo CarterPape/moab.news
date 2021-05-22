@@ -1,5 +1,5 @@
 #!/bin/zsh
-set -e
+set -eu
 
 script_path=$(realpath $0)
 scripts_dir_path=$(dirname $script_path)
@@ -8,49 +8,74 @@ site_path="$project_dir_path/_site"
 posts_path="$project_dir_path/_posts"
 post_assets_path="$project_dir_path/assets/posts"
 
+scss_in="$project_dir_path/_scss/main.scss"
+css_out="$project_dir_path/assets/generated/main.css"
+
 dev () {
+    trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
+    
+    npx webpack             \
+        --mode=development  \
+        --watch             \
+        &
+    sass "$scss_in":"$css_out" --watch &
     bundle exec jekyll serve --incremental
 }
 
 test () {
     # check_names --print-on-fail
     # check_for_archived_pages
-    JEKYLL_ENV="production" bundle exec jekyll build --incremental
+    production_build
+    
     proof_html
-    rclone sync \
-        --checksum \
-        --progress \
-        --fast-list \
+    
+    rclone sync         \
+        --dry-run       \
+        --checksum      \
+        --progress      \
+        --fast-list     \
         --track-renames \
-        --dry-run \
-        $site_path \
+        $site_path      \
         s3-for-moab-news:moab.news
 }
 
+production_build () {
+    npx webpack --mode=production --progress
+    sass "$scss_in":"$css_out"  \
+        --no-source-map         \
+        --style=compressed
+    JEKYLL_ENV="production" bundle exec jekyll build
+}
+
 push () {
-    git pull
-    git push
     # check_names --die-on-fail
     # archive_new_links
-    JEKYLL_ENV="production" bundle exec jekyll build
+    production_build
+    
     proof_html
-    rclone sync \
-        --checksum \
-        --progress \
-        --fast-list \
+    
+    rclone sync         \
+        --checksum      \
+        --progress      \
+        --fast-list     \
         --track-renames \
-        $site_path \
+        $site_path      \
         s3-for-moab-news:moab.news
     
     index
-    # set the caching headers on all files that need it with https://s3tools.org/s3cmd (maybe)
-    # purge the cache of updated files
+    
+    # set the caching headers on all files that need it (maybe with https://s3tools.org/s3cmd)
+    # purge the CloudFlare cache of updated files
+    
+    git pull
+    git push
 }
 
 index () {
     set -o allexport
     source "$project_dir_path/.env"
     set +o allexport
+    
     bundle exec jekyll algolia
 }
 
@@ -68,17 +93,18 @@ purge_htmlproofer_cache_of_internal_query_links() {
 
 proof_html () {
     purge_htmlproofer_cache_of_internal_query_links
-    htmlproofer $site_path  \
-        --internal_domains moab.news \
-        --assume_extension \
-        --enforce_https \
-        --check_favicon \
-        --check_html \
-        --check_opengraph \
-        --check_img_http \
-        --report_invalid_tags \
-        --report_missing_names \
-        --report_eof_tags \
+    
+    htmlproofer $site_path              \
+        --internal_domains moab.news    \
+        --assume_extension              \
+        --enforce_https                 \
+        --check_favicon                 \
+        --check_html                    \
+        --check_opengraph               \
+        --check_img_http                \
+        --report_invalid_tags           \
+        --report_missing_names          \
+        --report_eof_tags               \
         --timeframe 2d
 }
 
