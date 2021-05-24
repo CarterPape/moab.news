@@ -97,12 +97,12 @@ check_names () {
     $dir_path/scripts/check_names.rb $1
 }
 
-purge_htmlproofer_cache_of_internal_query_links() {
-    gsed -i 's ,"\(/\|#\)[^"]*?[^"]*":{[^}]*}  g' "$project_dir_path/tmp/.htmlproofer/cache.log"
+purge_htmlproofer_cache_of_internal_links() {
+    gsed -i 's ,"\(/\|#\)[^"]*":{[^}]*}  g' "$project_dir_path/tmp/.htmlproofer/cache.log"
 }
 
 proof_html () {
-    purge_htmlproofer_cache_of_internal_query_links
+    purge_htmlproofer_cache_of_internal_links
     
     htmlproofer $site_path              \
         --internal_domains moab.news    \
