@@ -2,3 +2,6 @@
 // 1. Search bar (which can do autocomplete and "did you mean")
 // 2. Date range
 // 3. Sort by
+
+import App from "./search.jsx";
+export default App;
