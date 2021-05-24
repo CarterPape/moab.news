@@ -12,6 +12,8 @@ scss_in="$project_dir_path/_scss/main.scss"
 css_out="$project_dir_path/assets/generated/main.css"
 
 dev () {
+    rm -r "$project_dir_path/assets/generated"
+    
     trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
     
     npx webpack             \
@@ -40,6 +42,8 @@ test () {
 }
 
 production_build () {
+    rm -r "$project_dir_path/assets/generated"
+    
     npx webpack --mode=production --progress
     sass "$scss_in":"$css_out"  \
         --no-source-map         \
