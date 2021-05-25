@@ -1,7 +1,7 @@
 /**
- * Basic styling
- */
- body {
+* Basic styling
+*/
+body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -17,19 +17,29 @@
 }
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
- */
- h1, h2, h3, h4, h5, h6,
- p, blockquote, pre,
- ul, ol, dl, figure,
- %vertical-rhythm {
-     margin-bottom: $spacing-unit / 2;
- }
+* Set `margin-bottom` to maintain vertical rhythm
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol,
+dl,
+figure,
+pre,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
 
 /**
- * Wrapper
- */
- .wrapper {
+* Wrapper
+*/
+.wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right:   auto;

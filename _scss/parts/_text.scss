@@ -1,7 +1,8 @@
 /**
- * Lists
- */
-ul, ol {
+* Lists
+*/
+ul,
+ol {
     margin-left: $spacing-unit;
 }
 
@@ -13,9 +14,14 @@ li {
 }
 
 /**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
+* Headings
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: $base-font-weight;
     line-height: 1;
 }
@@ -34,8 +40,8 @@ h4 {
 }
 
 /**
- * Links
- */
+* Links
+*/
 a {
     color: $brand-color;
     text-decoration: none;
