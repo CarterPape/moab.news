@@ -62,9 +62,6 @@ liquid:
 
 strict_front_matter: true
 
-jekyll-minifier:
-    compress_css: false
-
 reduce_title_redundancy:
     strip_title: true
 
