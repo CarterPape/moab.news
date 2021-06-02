@@ -17,7 +17,9 @@ group :jekyll_plugins do
     gem "jekyll-seo-tag"
     gem "jekyll-optional-front-matter"
     gem "jekyll-twitter-plugin"
-    gem "jekyll-reduce-title-redundancy"
+    gem "jekyll-reduce-title-redundancy",
+        github: "CarterPape/jekyll-reduce-title-redundancy",
+        branch: "master"
     gem "jekyll-asciidoc"
     gem "jekyll-algolia"
     gem "jekyll-minifier"
