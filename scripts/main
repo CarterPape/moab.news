@@ -1,15 +1,15 @@
 #!/bin/zsh
 set -eu
 
+domain="moab.news"
+production_bucket="s3-for-moab-news:moab.news"
+
 script_path=$(realpath $0)
 scripts_dir_path=$(dirname $script_path)
 project_dir_path=$(dirname $scripts_dir_path)
 site_path="$project_dir_path/_site"
 posts_path="$project_dir_path/_posts"
 post_assets_path="$project_dir_path/assets/posts"
-
-scss_in="$project_dir_path/_scss/main.scss"
-css_out="$project_dir_path/assets/generated/main.css"
 
 dev () {
     remove_generated_files_if_present
@@ -20,7 +20,6 @@ dev () {
         --mode=development  \
         --watch             \
         &
-    sass "$scss_in":"$css_out" --watch &
     bundle exec jekyll serve --incremental
 }
 
@@ -44,16 +43,13 @@ test () {
         --fast-list     \
         --track-renames \
         $site_path      \
-        s3-for-moab-news:moab.news
+        $production_bucket
 }
 
 production_build () {
     remove_generated_files_if_present
     
     npx webpack --mode=production --progress
-    sass "$scss_in":"$css_out"  \
-        --no-source-map         \
-        --style=compressed
     JEKYLL_ENV="production" bundle exec jekyll build
 }
 
@@ -70,7 +66,7 @@ push () {
         --fast-list     \
         --track-renames \
         $site_path      \
-        s3-for-moab-news:moab.news
+        $production_bucket
     
     index
     
@@ -105,7 +101,7 @@ proof_html () {
     purge_htmlproofer_cache_of_internal_links
     
     htmlproofer $site_path              \
-        --internal_domains moab.news    \
+        --internal_domains $domain      \
         --assume_extension              \
         --enforce_https                 \
         --check_favicon                 \

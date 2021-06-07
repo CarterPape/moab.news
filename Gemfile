@@ -11,6 +11,9 @@ gem "jekyll"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
     gem "jekyll-feed"
+    gem "jekyll-sass-converter",
+        github: "ntkme/jekyll-sass-converter",
+        branch: "main"
     gem "jekyll-target-blank"
     gem "jekyll-compose"
     gem "jekyll-redirect-from"
