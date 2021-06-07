@@ -1,20 +1,4 @@
 {
-    "name": "moab.news",
-    "version": "0.1.0",
-    "description": "Weekday updates on the news in Grand County, Utah",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/CarterPape/moab.news.git"
-    },
-    "author": "Carter Pape",
-    "license": "GPL-3.0-or-later",
-    "bugs": {
-        "url": "https://github.com/CarterPape/moab.news/issues"
-    },
-    "homepage": "https://moab.news",
     "type": "module",
     "dependencies": {
         "@algolia/autocomplete-js": "^1.0.1",
