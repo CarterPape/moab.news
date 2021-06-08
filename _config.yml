@@ -101,3 +101,5 @@ exclude:
     - webpack.config.js
     - webpack/
     - .babelrc
+    - requirements.txt
+    - webpack.config.babel.js
