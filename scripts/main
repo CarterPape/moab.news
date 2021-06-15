@@ -24,7 +24,12 @@ dev () {
         --mode=development  \
         --watch             \
         &
-    bundle exec jekyll serve --incremental --host $DEV_HOST_NAME
+    
+    bundle exec jekyll serve \
+        --incremental \
+        --host $DEV_HOST_NAME \
+        --port $DEV_PORT \
+        --livereload-port $DEV_LIVERELOAD_PORT
 }
 
 remove_generated_files_if_present () {
