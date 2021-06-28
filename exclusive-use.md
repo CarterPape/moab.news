@@ -40,8 +40,6 @@ Of course, not every photo I take or program I create belongs to my employer. It
     class = "torn-paper"
     alt = "excerpt of the linked document with the first part of the definition of 'work made for hire' highlighted"
     is_decorative = false
-    credit = "Carter Pape"
-    license = "exclusive use"
 %}
 
 What's within the scope of my employment? Well, that's arguable, but I think it clearly does not include photos that I take for the intention of openly licensed use, nor programs that I write for myself rather than for the newspaper.
