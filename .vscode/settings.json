@@ -8,5 +8,10 @@
         "megablock",
         "moabtimes",
         "photosim"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#cc6600",
+        "statusBarItem.remoteBackground": "#cc6600",
+        "statusBar.background": "#cc6600"
+    }
 }
