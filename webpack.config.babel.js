@@ -18,7 +18,7 @@ const __dirname = dirname(
 );
 
 export default {
-    entry: "./webpack/main.js",
+    entry: resolve(__dirname, "webpack/main.js"),
     output: {
         path: resolve(__dirname, 'assets/generated'),
         filename: "main.js",
@@ -28,7 +28,9 @@ export default {
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules)/,
-                use: "babel-loader",
+                use: [{
+                    loader: "babel-loader"
+                }],
             }
         ]
     },
