@@ -1,11 +1,11 @@
 import {
     resolve,
     dirname
-} from 'path';
+} from "path";
 
 import {
     fileURLToPath
-} from 'url';
+} from "url";
 
 import pkg from "dotenv-webpack";
 const Dotenv = pkg;
@@ -17,12 +17,7 @@ const __dirname = dirname(
     )
 );
 
-export default {
-    entry: resolve(__dirname, "webpack/main.js"),
-    output: {
-        path: resolve(__dirname, 'assets/generated'),
-        filename: "main.js",
-    },
+const common_config = {
     module: {
         rules: [
             {
@@ -39,3 +34,14 @@ export default {
     ],
     target: "web",
 };
+
+export default [
+    {
+        entry: resolve(__dirname, "webpack/search.js"),
+        output: {
+            path: resolve(__dirname, "assets/generated"),
+            filename: "search.js",
+        },
+        ... common_config
+    },
+];

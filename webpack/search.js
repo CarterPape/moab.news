@@ -3,5 +3,5 @@
 // 2. Date range
 // 3. Sort by
 
-import App from "./search.jsx";
+import App from "./search/ui.jsx";
 export default App;
