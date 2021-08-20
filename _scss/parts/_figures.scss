@@ -82,3 +82,9 @@ figure.torn-paper .img-wrapper {
 figure.drop-shadow .img-wrapper {
     box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.5);
 }
+
+figure.side-photo {
+    float: right;
+    margin: 0 0 .25em 1em;
+    width: 30%;
+}
