@@ -9,6 +9,12 @@ blockquote {
     > :last-child {
         margin-bottom: 0;
     }
+    
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 }
 
 .attributed-quote {
