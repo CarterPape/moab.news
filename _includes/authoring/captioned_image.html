@@ -121,6 +121,10 @@
     | markdownify
 -%}
 
+{%- if include.is_decorative -%}
+    {%- assign html_caption = "" -%}
+{%- endif -%}
+
 {%- include authoring/captioned_figure.html
     html_content =  html_content
     html_caption =  html_caption
