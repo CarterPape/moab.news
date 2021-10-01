@@ -1,4 +1,8 @@
-# Municipal election candidate introductions
+---
+categories: election-2021
+---
+
+# Election 2021: Introductions
 
 We have 13 candidates vying for three elected offices this year — seven for one mayoral seat, six for two city council seats. I asked each of them for the following things:
 

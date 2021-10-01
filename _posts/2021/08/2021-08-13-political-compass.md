@@ -1,3 +1,8 @@
+---
+categories: election-2021
+---
+
+
 # A political compass for Moab
 
 I'm coming up with questions to ask each of the city council candidates so that I can place them on a political compass for voters.
@@ -89,15 +94,15 @@ People who support stagnation should disagree because they think the current siz
 
 If the question were about more and larger buildings, that would put growth supporters against stagnation and degrowth supporters.
 
-### Grow
+### Expand
 
 1. Moab would be better off with a larger economy.
 1. Moab would be better off with more hotels and campgrounds.
 1. We should not develop any more water resources in the valley.
-1. When it comes to Moab’s housing crises, we cannot “build our way out of it”.
+1. When it comes to Moab’s housing crises, we cannot "build our way out of it."
 1. I would be comfortable with an apartment complex being built within a quarter-mile of my home. (A quarter-mile is slightly longer than two city blocks.)
 
-### Shrink
+### Contract
 
 1. Moab would be better off with fewer visitors.
 1. Moab would be better off if fewer people lived here.
@@ -124,7 +129,7 @@ If the question were about more and larger buildings, that would put growth supp
 1. Moab employers know best what their workers’ labor is worth.
 1. Development in Moab should be allowed regardless of its effect on locals.
 1. Deregulating local businesses is the best practical way for Moab to prosper.
-1. Moab would be better off if the national and state parks belonged to private owners rather than the government.
+1. Moab would be better off if federal and state lands belonged to private owners rather than the government.
 
 ## Next steps
 
